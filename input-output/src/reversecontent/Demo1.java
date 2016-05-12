@@ -9,8 +9,8 @@ public class Demo1 {
     public static void main(String[] args) throws IOException {
         java.io.File fileToRead = new java.io.File("files.txt");
 
-        File demo = new File();
-        int[] readBytes = demo.readByte(fileToRead);
+        TextFile demo = new TextFile();
+        int[] readBytes = demo.Reverse(fileToRead);
 
         demo.printReverse(readBytes);
     }

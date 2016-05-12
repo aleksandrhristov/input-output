@@ -8,11 +8,11 @@ import java.util.Scanner;
  */
 public class TextFiles {
 
-    public void createFile(String name, String...names) {
+    public void createFile(String name, String... names) {
         console(name, names);
     }
 
-    private void console(String name, String...names) {
+    private void console(String name, String... names) {
         Writer writer = null;
 
         try {
@@ -38,7 +38,7 @@ public class TextFiles {
         while (true) {
             s = scanner.next();
             writer.write(s + "\n");
-            if (isStopSymbol(s,stopSymbols)) {
+            if (isStopSymbol(s, stopSymbols)) {
                 break;
             }
         }
@@ -47,16 +47,15 @@ public class TextFiles {
     }
 
     private boolean isStopSymbol(String symbol, String[] stopSymbols) {
-        for (int i = 0; i <stopSymbols.length; i++){
-            if (symbol.equals(stopSymbols[i])){
+        for (int i = 0; i < stopSymbols.length; i++) {
+            if (symbol.equals(stopSymbols[i])) {
                 return true;
             }
         }
         return false;
     }
 
-
-    }
+}
 
 
 
