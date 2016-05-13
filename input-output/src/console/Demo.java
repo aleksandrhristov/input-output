@@ -1,8 +1,5 @@
 package console;
-
 import java.io.IOException;
-
-
 /**
  * Created by clouway on 09.05.16.
  */

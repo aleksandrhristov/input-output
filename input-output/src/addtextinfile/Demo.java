@@ -8,7 +8,5 @@ public class Demo {
         TextFiles textFile = new TextFiles();
         String name = "files.txt";
         textFile.createFile(name,".","/","|");
-
-
     }
 }
