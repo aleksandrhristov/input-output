@@ -18,11 +18,8 @@ public class Demo12 {
         TransferObject transferObject = new TransferObject();
         InputStream in = new FileInputStream(myFile);
         OutputStream out = new ByteArrayOutputStream();
-        int len = 40;
-        int offset = 10;
-        byte[] bytes = new byte[4096];
-        Arrays.toString(bytes);
-        ByteStreams.copy(in,out);
+        transferObject.convertByteToString();
+        transferObject.copy(in,out);
 
     }
 }
