@@ -6,10 +6,6 @@ import java.io.*;
  * Created by clouway on 10.05.16.
  */
 public class Text {
-
-
-
-
     public String reverse(File reverse) throws IOException {
         FileInputStream source = new FileInputStream(reverse);
         int currentByte = source.available();

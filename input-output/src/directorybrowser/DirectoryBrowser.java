@@ -1,19 +1,21 @@
 package directorybrowser;
 
-import javax.swing.JFileChooser;
 import java.io.File;
 
 public class DirectoryBrowser {
-    public void listContent(String path) {
-        File folder = new File(".");
+    public int listContent(String path) {
+        File folder = new File(path);
         File[] listOfFiles = folder.listFiles();
 
-        for (int i = 0; i < listOfFiles.length; i++) {
-            if (listOfFiles[i].isFile()) {
-                System.out.println("File " + listOfFiles[i].getName());
-            } else if (listOfFiles[i].isDirectory()) {
-                System.out.println("Directory " + listOfFiles[i].getName());
+        {
+            for (int i = 0; i < listOfFiles.length; i++) {
+                if (listOfFiles[i].isFile()) {
+                    listOfFiles[i].getName();
+                } else if (listOfFiles[i].isDirectory()) {
+                    listOfFiles[i].getName();
+                }
             }
+            return 0;
         }
     }
 }
