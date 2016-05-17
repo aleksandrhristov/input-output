@@ -8,7 +8,6 @@ public class TransferObject {
     private final int BUF_SIZE = 20;
 
     public long transfer(InputStream from, OutputStream to, int offset, int length) throws IOException {
-        FileOutputStream fileOutputStream = new FileOutputStream("ffiles.txt");
         byte[] buf = new byte[BUF_SIZE];
         checkNotNull(from);
         checkNotNull(to);
