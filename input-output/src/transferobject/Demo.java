@@ -5,11 +5,13 @@ import java.io.*;
 public class Demo {
 
     public static void main(String[] args) throws IOException {
+        TransferObject transferObject = new TransferObject();
         String myFile = "files.txt";
         String myFile1 = "ffiles.txt";
-        TransferObject transferObject = new TransferObject();
+        int BUFFER_SIZE = 20;
         InputStream in = new FileInputStream(myFile);
         OutputStream out = new FileOutputStream(myFile1);
-        transferObject.transfer(in,out);
+        byte[] buf = new byte[BUFFER_SIZE];
+        transferObject.transfer(in,out,buf,0,2);
+        }
     }
-}

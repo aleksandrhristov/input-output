@@ -11,11 +11,11 @@ import java.util.List;
 public class Demo {
     public static void main(String s[]) {
         DirectoryBrowser directoryBrowser = new DirectoryBrowser();
-        //List<File> images = directoryBrowser.listContent();
-        directoryBrowser.listContent("");
-       // for (File p : images){
-        //    System.out.println(p);
-       // }
-       // directoryBrowser.listContent("./");
+        final String directoryLinuxMac ="/home/clouway";
+        List<Path> images = directoryBrowser.listFilesAndFolders(directoryLinuxMac);
+        for( Path p : images){
+            System.out.println(p);
+        }
     }
+
 }
