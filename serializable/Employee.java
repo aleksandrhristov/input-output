@@ -34,6 +34,6 @@ public class Employee implements java.io.Serializable {
     }
 
     public void mailCheck() {
-        System.out.println("Mailing a check to " + name + " " + address);
+        System.out.println("Mailing a check to " + name + " " + address);     
     }
 }
